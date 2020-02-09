@@ -1,29 +1,186 @@
-.mart {
-    font-size: 30px;
-    font-family: "Roboto";
-    color: rgb(26, 188, 156);
-    text-transform: uppercase;
-    line-height: 1.067;
-    position: absolute;
-    left: 259.391px;
-    top: 66.336px;
-    width: 78px;
-    height: 21px;
-    z-index: 115;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    box-sizing: border-box;    
+}
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+a {
+    text-decoration: none;
+}
+.clearfix::after {
+ display: table;
+ content: "";
+ clear: both;
+}
+.container {
+ margin: 0 auto;
+ width: 1140px;
+ padding: 0 10px;
+}
+.header {
+ padding-top: 35px;
+ padding-bottom: 100px;
+ line-height: 30px;
+}
+.logo {
+ float: left;
+ margin: 0;
+}
+.logo::first-letter {
+ font-weight: 900;
+ color: rgb(26, 188, 156);
+}
+.logo_heading {
+ font-family: "Roboto", sans-serif;
+ font-size: 30px;
+ letter-spacing: -0.6px;
+ font-weight: 300;
+ text-transform: uppercase;
+}
+.menu {
+ float: right;
+}
+.menu_link {
+ float: left;
+ margin-left: 35px;
+ text-transform: uppercase;
+ font-weight: 900;
+ list-style: none;
+}
+.menu a {
+ font-size: 14px;
+ letter-spacing: -0.28px;
+ color: rgb(15, 1, 1);
+ transition: all 0.3s;
+}
+.menu_link a:hover {
+ color: rgb(26, 188, 156);
+}
+.products {
+ padding-bottom: 95px;
+}
+h2 {
+ text-align: center;
+ font-family: "Roboto", sans-serif;
+ font-weight: 900;
+ font-size: 48px;
+ letter-spacing: -0.96px;
+ text-transform: uppercase;
+}
+h2::after {
+ content: "";
+ margin: 20px auto 0px;
+ display: block;
+ width: 164px;
+ height: 7px;
+ background-color: rgb(26, 188, 156);
+}
+.products_heading {
+ padding-bottom: 90px;
+}
+.card {
+ float: left;
+ width: 255px;
+ margin-bottom: 30px;
+ list-style: none;
+ background-color: rgb(233, 240, 253);
+} 
+.card:not(:nth-child(4n)) {
+ margin-right: 30px;
+} 
+.card:nth-last-child(-n + 4) {
+ margin-bottom: 0px;
+} 
+.card:hover .card_line_price {
+    background-color: rgb(26, 188, 156);
+} 
+.card_img {
+ display: block;
+}
+.card_line_price {
+ font-weight: 900;
+ line-height: 40px;
+ letter-spacing: -0.36px;
+ text-transform: uppercase;
+ background-color: rgb(50, 50, 50);
+ transition: all 0.3s;
+}
+.card_name a {
+ float: left;
+ padding-left: 14px;
+ font-family: "Roboto", sans-serif;
+ font-size: 18px;
+ color: rgb(255, 255, 255);
+}
+.card_price {
+ float: right;
+ text-align: center;
+ width: 54px;
+ height: 40px;
+ font-family: "Roboto", sans-serif;
+ font-size: 18px;
+ color: rgb(255, 255, 255);
+ background-color: rgba(255, 255, 255, 0.44);
+}
+.news {
+ padding-bottom: 80px;
+}
+.news_heading {
+ padding-bottom: 80px;
+}
+.news_heading::after {
+ background-color: rgb(78, 198, 172);
+}
+.news_list {
+ list-style: none;
   }
-  .Home__________About_Us___________page_________s {
-    font-size: 14px;
-    font-family: "OpenSans";
-    color: rgb(26, 188, 156);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 0.786;
-    text-align: right;
-    position: absolute;
-    left: 820.765px;
-    top: 48.902px;
-    width: 467px;
-    height: 10px;
-    z-index: 118;
-  }
-    
+.news_card {
+ float: left;
+ width: 346px;
+}
+.news_card:not(:nth-child(3n)) {
+ margin-right: 36px;
+}
+.news_img {
+ display: block;
+}
+.news_title {
+ padding-top: 9px;
+ padding-bottom: 26px;
+ font-weight: 600;
+ font-size: 18px;
+ letter-spacing: -0.36px;
+ line-height: 26px;
+}
+.news_title::after {
+ content: "";
+ margin-top: 9px;
+ display: block;
+ width: 136px;
+ height: 3px;
+ background-color: rgb(78, 198, 171);
+}
+.news_article {
+ font-size: 14px;
+ letter-spacing: -0.28px;
+ line-height: 24px;
+}
+.news_knob {
+ display: inline-block;
+ margin-top: 13px;
+ padding: 17px 42px;
+ text-align: center;
+ font-size: 16px;
+ font-weight: 300;
+ letter-spacing: -0.32px;
+ border: none;
+ border-radius: 5px;
+ color: #fff;
+ background-color: rgb(78, 198, 171);
+}
