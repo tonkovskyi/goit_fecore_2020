@@ -14,7 +14,7 @@ a {
 .container {
  margin: 0 auto;
  width: 1110px;
- padding: 0 auto;
+ padding: 0;
 }
 .header {
  padding-top: 35px;
