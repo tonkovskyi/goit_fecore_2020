@@ -39,6 +39,7 @@ a {
 .logo_heading {
  font-family: "Roboto", sans-serif;
  font-size: 30px;
+ color: rgb(85, 82, 82);
  letter-spacing: -0.6px;
  font-weight: 300;
  text-transform: uppercase;
@@ -50,7 +51,6 @@ a {
  float: left;
  margin-left: 35px;
  text-transform: uppercase;
- font-weight: 900;
  list-style: none;
 }
 .menu a {
@@ -58,6 +58,8 @@ a {
  letter-spacing: -0.28px;
  color: rgb(15, 1, 1);
  transition: all 0.3s;
+ font-family: "Open Sans", sans-serif;
+ font-weight: bold;
 }
 .menu_link a:hover {
  color: rgb(26, 188, 156);
@@ -112,7 +114,6 @@ h2::after {
  transition: all 0.3s;
 }
 .card_name a {
- float: left;
  padding-left: 14px;
  font-family: "Roboto", sans-serif;
  font-size: 18px;
@@ -157,6 +158,8 @@ h2::after {
  font-size: 18px;
  letter-spacing: -0.36px;
  line-height: 26px;
+ color: rgb(85, 82, 82);
+ font-family: "Open Sans", sans-serif;
 }
 .news_title::after {
  content: "";
@@ -170,6 +173,8 @@ h2::after {
  font-size: 14px;
  letter-spacing: -0.28px;
  line-height: 24px;
+ font-family: "Open Sans", sans-serif;
+ color: rgb(85, 82, 82);
 }
 .news_knob {
  display: inline-block;
@@ -183,4 +188,7 @@ h2::after {
  border-radius: 5px;
  color: #fff;
  background-color: rgb(78, 198, 171);
+}
+h3 {
+    float: left;   
 }

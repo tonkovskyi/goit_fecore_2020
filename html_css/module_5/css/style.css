@@ -27,14 +27,16 @@ a {
 }
 .logo::first-letter {
  font-weight: 900;
- color: rgb(26, 188, 156);
+ color: rgb(255, 188, 156);
 }
 .logo_heading {
  font-family: "Roboto", sans-serif;
  font-size: 30px;
+ color: rgb(85, 82, 82);
  letter-spacing: -0.6px;
  font-weight: 300;
  text-transform: uppercase;
+ 
 }
 .menu {
  float: right;
@@ -307,3 +309,4 @@ div>a {
 .designed {
  color: #46bfa9;
 }
+  
