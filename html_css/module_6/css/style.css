@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}  
+a {
+    text-decoration: none;
+}
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_heading a{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(149, 225, 211);
+    font-family: "Montserrat", sans-serif;
+}
+.logo_heading :hover{
+    color: rgb(243, 129, 129) ;
+    transition: color .2s linear;
+}
+.header_nav {
+    min-width: 490px;
+    max-width: 800px;
+}
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.menu_link a {
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(149, 225, 211);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+.menu_link :hover{
+    color: rgb(243, 129, 129) ;
+    transition: color .2s linear;
+}
+.link::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    transition: background-color .2s linear;
+}
+.link:hover  {
+    color: rgb(243, 129, 129);
+    
+}
+.link:hover::after {
+    background-color:rgb(243, 129, 129) ;
+}
+.services {
+      padding: 100px 0 45px;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color:rgb(51, 51, 51);
+    font-family: "Montserrat";
+}
+.first_line {
+    margin-bottom: 15px;
+    display: block;
+    font-family: "Kaushan Script",sans-serif;
+    font-size: 24px;
+    text-transform: initial;
+}
+h2::after {
+    content: "";
+    margin: 35px auto 0;
+    width: 60px;
+    height: 3px;
+    display: block;
+    background-color:rgb(243, 129, 129);
+}
+.services_list {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.services_category {
+    position: relative;
+    width: 380px;
+    min-height: 115px;
+    padding: 20px 20px 20px 80px;
+    margin-bottom: 55px;
+}
+h3 {
+    margin-bottom: 10px;
+  }
+h3::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+h3 {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color:rgb(51, 51, 51);
+    font-family:"Montserrat", sans-serif;
+}
+.services_describe {
+    font-size: 15px;
+    line-height: 24px;
+    color:rgb(153, 153, 153);
+    font-family: "Roboto", sans-serif;
+}
+h3.photography::before {
+      background: url(../images/image1.png) no-repeat;
+}
+h3.web_design::before {
+    background: url(../images/image2.png) no-repeat;
+}
+h3.creativity::before {
+    background: url(../images/image3.png) no-repeat;
+}
+ h3.seo::before {
+    background: url(../images/image4.png) no-repeat;
+}
+h3.css_html::before {
+    background: url(../images/image5.png) no-repeat;
+}
+h3.digital::before {
+    background: url(../images/image6.png) no-repeat;
+}
+.team_text {
+    margin: 42px auto 88px;
+    max-width: 960px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgb(153, 153, 153);
+}
+.team_member {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.card {
+  width: 380px;
+  text-align: center;
+}
+.box_background {
+  position: relative;
+  transition-property: transform, box-shadow ;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+}
+.box_background:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px 0 rgb(149, 225, 211);
+}
+.box_card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image:linear-gradient(
+    rgb(243, 129, 129, 0.9) 0%,
+    rgb(252, 227, 138, 0.9) 100%);
+  opacity: 0;
+  transition: opacity .2s linear;
+}
+.box_background:hover .box_card {
+  opacity: 1;
+}
+.sn_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  list-style-type: none;
+}
+.sn_icon{
+  margin-right: 1px;
+}
+.sn_link {
+  display: block;
+  width: 55px;
+  height: 55px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(252, 227, 138);
+  transition: background-color .2s linear;
+}
+.sn_link:hover {
+  background-color: rgb(149, 225, 211);
+}
+.member_name {
+  margin: 28px 0 8px;
+}
+.member_description {
+  font-family:"Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+  color:rgb(153, 153, 153);
+}
+.fb {
+  background-image: url(../images/image10.png);
+}
+
+.tw {
+  background-image: url(../images/image11.png);
+}
+
+.pint {
+  background-image: url(../images/image12.png);
+}
+
+.ig {
+  background-image: url(../images/image13.png);
+}
+.team {
+  padding-bottom: 85px;
+}
+.header_footer {
+  position: relative;
+  min-height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_footer::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(153, 153, 153, 0.5);
+}
+.footer_text {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+.footer_link {
+  color: rgb(243, 129, 129)
+}
+.form {
+  width: 230px;
+  height: 40px;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid rgb(231, 231, 231);
+  border-right: none;
+}
+.form::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  color: rgb(204, 204, 204);
+}
+.knob {
+  min-width: 150px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid rgb(149, 225, 211);
+  color: rgb(255, 255, 255);
+  background-color: rgb(149, 225, 211);
+  cursor: pointer;
+}
