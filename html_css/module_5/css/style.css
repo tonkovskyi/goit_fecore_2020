@@ -169,9 +169,9 @@ h2 {
  position: relative;
  float: left;
  width: 255px;
- height: 323px;
  background-color: rgb(50, 50, 50);
  margin-bottom: 100px;
+ z-index: 1;
 }
 .product_name {
  width: 200px;
@@ -211,14 +211,15 @@ div>a {
  margin-right: 30px;
 }
 .box {
- position: absolute;
+ position: relative;
  width: 255px;
  height: 283px;
  background-color: rgba(255, 255, 255, 0.42);
  display: none;
-
 }
-.bbackground {
+.box::before {
+ display: block;
+ content: '';
  width: 236px;
  height: 262px;
  background-color: rgba(0, 0, 0, 0.55);
@@ -233,6 +234,7 @@ div>a {
  top: 50%;
  left: 50%;
  transform: translateY(-50%) translateX(-50%);
+ z-index: 2;
 }
 .buttons>button {
  float: left;
@@ -247,6 +249,10 @@ div>a {
  background: none;
  border: 1px solid rgb(255, 255, 255);
  display: block;
+ background-repeat: no-repeat;
+ background-position: center;
+ display: inline-block;
+ justify-content: center;
 }
 .small_button:not(:nth-last-child(-n+2)) {
  margin-right: 8px;
@@ -256,6 +262,15 @@ div>a {
  border: 1px solid #1abc9c;
  box-shadow:0px 0px 10px #ccc;
  transition: 0.5s;
+}
+.h {
+    background-image: url(../images/image6.png);
+}
+.a {
+    background-image: url(../images/image7.png);
+}
+.t {
+    background-image: url(../images/image8.png);
 }
 .big_button {
  background-color: #323232;
@@ -288,6 +303,7 @@ div>a {
 }
 .product:hover > .box{
  display: block;
+ position: absolute;
 }
 .product:hover {
  background-color: #1abc9c;
