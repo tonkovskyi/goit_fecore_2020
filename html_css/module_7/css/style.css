@@ -151,11 +151,8 @@ ul>.services_menu:nth-child(3)::before {
     left: 0;
 }
 .background {
-    color: #777777;
+    color: rgb(255, 255, 255);
     padding-top: 110px;
-}
-.background>span {
-    color: #ffffff;
 }
 .fill_in {
     height: 210px;
