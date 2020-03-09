@@ -146,7 +146,7 @@ section:after, footer:after {
 .ava_elipse_icon { 
     width: 16px; 
     height: 16px; 
-    background: url(img/sprite.png) no-repeat; 
+    background: url(../images/image02.png) no-repeat; 
 }
 .ava_elipse_icon.cup { 
     background-position: 0 -17px; 
@@ -182,7 +182,8 @@ section:after, footer:after {
     display: block; 
     text-align: center; 
     margin: 0 auto; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    margin-bottom: 75px;
 }
 .partners_btn:active { 
     color: #ff4e50; 
@@ -201,7 +202,7 @@ section:after, footer:after {
       vertical-align: top; 
       float: none; 
       margin: 0 20px 55px 20px; 
-    }
+    }}
 /*Mobile style*/
 @media only screen and (max-width: 748px) { .container { width: 300px; }
   .header { 
@@ -246,7 +247,7 @@ section:after, footer:after {
       left: 46px; 
     }
   .partners { 
-      padding-top: 33px; 
+      padding-top: 33px;
     }
   .partners_h3 { 
       margin-bottom: 15px; 
@@ -256,4 +257,4 @@ section:after, footer:after {
     }
   .partners_blocks { 
       margin-bottom: 23px; 
-    }
+    }}
