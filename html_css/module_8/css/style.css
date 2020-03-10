@@ -110,14 +110,14 @@ section:after, footer:after {
 .partners_blocks:last-child { 
     margin-right: 0; 
 }
-.partners_block_ava { 
+.partners_block_img { 
     width: 120px; 
     height: 120px; 
     border-radius: 60px; 
     background-color: #1a1915; 
     display: inline-block; 
 }
-.ava_elipse { 
+.img_elipse { 
     width: 40px; 
     height: 40px; 
     border-radius: 20px; 
@@ -127,32 +127,32 @@ section:after, footer:after {
     box-sizing: border-box; 
     padding: 7px 7px 7px 8px; 
 }
-.ava_elipse.red { 
+.img_elipse.red { 
     background-color: #ff4e50; 
 }
-.ava_elipse.green { 
+.img_elipse.green { 
     background-color: #1cd7ad; 
 }
-.ava_elipse.yellow { 
+.img_elipse.yellow { 
     background-color: #ffa507; 
 }
-.ava_elipse.blue { 
+.img_elipse.blue { 
     background-color: #4e73db; 
     padding-left: 7px; 
 }
-.ava_elipse_icon { 
+.img_elipse_icon { 
     width: 16px; 
     height: 16px; 
     background: url(../images/image02.png) no-repeat; 
 }
-.ava_elipse_icon.cup { 
+.img_elipse_icon.cup { 
     background-position: 0 -17px; 
 }
-.ava_elipse_icon.bulb { 
+.img_elipse_icon.bulb { 
     background-position: 1px -32px; 
     height: 18px; 
 }
-.ava_elipse_icon.plane { 
+.img_elipse_icon.plane { 
     background-position: -1px -49px; 
     width: 18px; 
     height: 17px; 
