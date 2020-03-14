@@ -73,7 +73,7 @@ section:after, footer:after {
     margin-top: 179px; 
 }
 .header_middle_h1 { 
-    width: 500px; 
+    width: 510px; 
     font: bold 52px/64px "Montserrat"; 
     text-transform: uppercase; 
     margin: 0; 
@@ -127,35 +127,34 @@ section:after, footer:after {
     box-sizing: border-box; 
     padding: 7px 7px 7px 8px; 
 }
-.img_elipse.red { 
-    background-color: #ff4e50; 
+.partners_blocks:nth-child(1)>div::before {
+    background-image: url(../images/image07.png);
+    background-color: #ff4e50;
 }
-.img_elipse.green { 
-    background-color: #1cd7ad; 
+.partners_blocks:nth-child(2)>div::before {
+    background-image: url(../images/image08.png);
+    background-color: #ffa507;
 }
-.img_elipse.yellow { 
-    background-color: #ffa507; 
+.partners_blocks:nth-child(3)>div::before {
+    background-image: url(../images/image09.png);
+    background-color: #1cd7ad;
 }
-.img_elipse.blue { 
-    background-color: #4e73db; 
-    padding-left: 7px; 
+.partners_blocks:nth-child(4)>div::before {
+    background-image: url(../images/image10.png);
+    background-color: #4e73db;
 }
-.img_elipse_icon { 
-    width: 16px; 
-    height: 16px; 
-    background: url(../images/image02.png) no-repeat; 
-}
-.img_elipse_icon.cup { 
-    background-position: 0 -17px; 
-}
-.img_elipse_icon.bulb { 
-    background-position: 1px -32px; 
-    height: 18px; 
-}
-.img_elipse_icon.plane { 
-    background-position: -1px -49px; 
-    width: 18px; 
-    height: 17px; 
+.partners_blocks>div::before {
+    display: block;
+    content: '';
+    width: 32px;
+    height: 32px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 .partners_block_title { 
     font: bold 14px "Montserrat"; 
