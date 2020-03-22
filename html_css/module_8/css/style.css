@@ -36,9 +36,7 @@ section:after, footer:after {
     height: 700px; 
     color: #fff; }
 .header_top { 
-    height: 36px; 
-    position: relative; 
-    top: 38px; 
+    text-align: center;
 }
 .header_top_logo, .header_top_btn, .header_middle_btn { 
     color: #fff; 
